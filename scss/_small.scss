@@ -103,9 +103,25 @@ nav ul.open {
 }
 
 
+.hero {
+    position: relative;
+    div {
+        position: absolute;
+        bottom: 0px;
+        color: white;
+        left: 0px;
+        right: 0;
+        background: linear-gradient(90deg, rgba(0,0,0,.5) 0%, rgba(0,0,0,0.2) 40%);
+        padding: 10px;
+        h3 {text-shadow: 0 0 2px #000;}
+        p {text-shadow: 0 0 2px #000;}
+    }
+video{
+    width: 100%;
+    height: auto;
+}
 
-
-
+} // end hero
 
 
 

@@ -394,6 +394,29 @@ nav ul.open {
   display: block;
 }
 
+.hero {
+  position: relative;
+}
+.hero div {
+  position: absolute;
+  bottom: 0px;
+  color: white;
+  left: 0px;
+  right: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.2) 40%);
+  padding: 10px;
+}
+.hero div h3 {
+  text-shadow: 0 0 2px #000;
+}
+.hero div p {
+  text-shadow: 0 0 2px #000;
+}
+.hero video {
+  width: 100%;
+  height: auto;
+}
+
 /* --------------------------- MAIN --------------------------- */
 main h1 {
   padding: 1rem 10px 0.5rem 10px;
