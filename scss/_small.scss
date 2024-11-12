@@ -172,13 +172,14 @@ video{
   
   /* Style the back side with a contrasting golden color */
   .flip-card-back {
-    background-color: #f39c12; /* Golden color for contrast */
+    background-color: $primaryColor; /* Golden color for contrast */
     transform: rotateY(180deg);
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 16px;
     font-weight: normal;
+    color: white;
   }
 /* --------------------------- MAIN --------------------------- */
 main {
