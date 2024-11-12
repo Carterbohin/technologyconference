@@ -2,126 +2,120 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<title>Navigation Example</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" media="screen" href="css/styles.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Navigation Example</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.min.css">
 
-<!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<div id="headerWrapper">
-	<header>
-       <a href="#"><img src="images/logo1x.png" alt="logo" width="50" height="50" srcset="images/logo1x.png 1x, images/logo2x.png 2x, images/logo3x.png 3x"></a> 
-		<span>Cloud & Data</span>
-    <p>Technology at it's finest</p>
-        <div id="hamburgerBtn">
-            <span class="top"></span>
-            <span class="bottom"></span>
-        </div>
+    <div id="headerWrapper">
+        <header>
+            <a href="#"><img src="images/logo1x.png" alt="logo" width="50" height="50" srcset="images/logo1x.png 1x, images/logo2x.png 2x, images/logo3x.png 3x"></a> 
+            <span>Cloud & Data</span>
+            <p>Technology at its finest</p>
+            <div id="hamburgerBtn">
+                <span class="top"></span>
+                <span class="bottom"></span>
+            </div>
+        </header>
+    </div><!-- end header wrapper -->
 
-	</header>
-</div><!-- end header wrapper -->
+    <div id="navWrapper">
+        <nav>
+            <ul id="primaryNav">
+                <li><a href="#">Clients</a></li>
+                <li><a href="#">Services</a></li>
+                <li class="active"><a href="#">Best Practices</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div> <!-- end nav wrapper -->
 
+    <div id="mainWrapper">
+        <main>
+            <h1>Learn</h1>
+
+            <div class="hero">
+                <video autoplay muted loop width="800" height="300">
+                    <source src="media/hero-video-hb.webm" type="video/webm">
+                    <source src="media/hero-video-hb.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div>
+                <h3>Speakers 2025</h3>
+                <p>Let's Dive into our expert Speakers</p>
+            </div>
+
+            <h1>Speakers</h1>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/female1.jpg" alt="female1" style="width:459px;height:294px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Avery Jackson</h1>
+                        <p>Architect & Engineer</p>
+                        <p>Architect and engineer known for her innovative approach to sustainable design and her expertise in blending architectural aesthetics with structural integrity.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/female2.jpg" alt="female2" style="width:459px;height:294px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Christie Hon</h1>
+                        <p>Architect & Engineer</p>
+                        <p>Talented architect and designer known for her work in creating spaces that are both innovative and human-centered.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/male1.jpeg" alt="male1" style="width:459px;height:294px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>James Scott</h1>
+                        <p>Engineer</p>
+                        <p>Distinguished Engineer known for his expertise in creating innovative, sustainable, and contextually responsive architectural solutions.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/male2.jpg" alt="male2" style="width:459px;height:294px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Aurthor Black</h1>
+                        <p>Engineer</p>
+                        <p>Engineer known for his expertise in innovative engineering solutions and his contributions to advancing technology in various industries.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div><!-- end main wrapper -->
     
-    
-<div id="navWrapper">
-    <nav>
-        <ul id="primaryNav">
-            <li><a href="#">Clients</a></li>
-            <li><a href="#">Services</a></li>
-            <li class="active"><a href="#">Best Practices</a></li>
-            <li><a href="#">Our Team</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-</div> <!-- end nav wrapper -->
+    <div id="footerWrapper">
+        <footer>
+            <p>&copy; 2024 Carter Bohin &bull; All Rights Reserved</p>
+        </footer>
+    </div> <!-- end footer wrapper -->
 
-<div id="mainWrapper">
-    <main>
-<h1>Learn</h1>
-
-<div class="hero">
-  <video autoplay muted loop width="800" height="300">
-      <source src="/media/hero-video-hb.webm" type="video/webm">
-      <source src="/media/hero-video-hb.mp4" type="video/mp4">
-  </video>
-</div>
-        <div>
-            <h3>Speakers 2025</h3>
-            <p>Lets Dive into our expert Speakers
-            </p>
-        </div>
-    </div>
-<h1>Speakers</h1>
-    <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img src="images/female1.jpg" alt="female1" style="width:459px;height:294px;">
-          </div>
-          <div class="flip-card-back">
-            <h1>Avery Jackson</h1>
-            <p>Architect & Engineer</p>
-            <p>Architect and engineer known for her innovative approach to sustainable design and her expertise in blending architectural aesthetics with structural integrity.</p>
-          </div>
-        </div>
-      </div>
-
-    <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img src="images/female2.jpg" alt="female2" style="width:459px;height:294px;">
-          </div>
-          <div class="flip-card-back">
-            <h1>Christie Hon</h1>
-            <p>Architect & Engineer</p>
-            <p>Talented architect and designer known for her work in creating spaces that are both innovative and human-centered.</p>
-          </div>
-        </div>
-      </div>
-
-
-    <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img src="images/male1.jpeg" alt="male1" style="width:459px;height:294px;">
-          </div>
-          <div class="flip-card-back">
-            <h1>James Scott</h1>
-            <p>Engineer</p>
-            <p>Distinguished Engineer known for his expertise in creating innovative, sustainable, and contextually responsive architectural solutions.</p>
-          </div>
-        </div>
-      </div>
-
-
-    <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img src="images/male2.jpg" alt="male2" style="width:459px;height:294px;">
-          </div>
-          <div class="flip-card-back">
-            <h1>Aurthor Black</h1>
-            <p>Engineer</p>
-            <p>Engineer known for his expertise in innovative engineering solutions and his contributions to advancing technology in various industries</p>
-          </div>
-        </div>
-      </div>
-
-
-    </main>
-</div><!-- end main wrapper -->
-    
-<div id="footerWrapper">
-    <footer>
-        <p>Copyright &copy; &bull;2024 Carter Bohin &bull; 
-            
-    </footer>
-</div> <!-- end footer wrapper -->
-   <script src="js/scripts.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
-</html> 
+</html>
