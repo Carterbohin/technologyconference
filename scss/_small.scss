@@ -135,24 +135,24 @@ video{
 } // end hero
 
 
-
 .flip-card-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-template-columns: repeat(2, 1fr); /* Two columns for large screens */
     grid-template-rows: repeat(2, 1fr); /* Two rows */
     gap: 20px; /* Space between the cards */
     justify-items: center; /* Center cards horizontally */
     padding: 20px;
+    margin: 0 auto; /* Centers the whole container */
+    max-width: 940px; /* Limits the container width for better layout */
 }
 
 .flip-card {
     background-color: transparent;
-    width: 300px;
-    height: 200px;
+    width: 459px; /* Adjusted to match image width */
+    height: 294px; /* Adjusted to match image height */
     perspective: 1000px; /* Creates 3D effect for the flip */
     padding: 10px;
-    margin: auto;
-    
+    margin: auto; /* Centers each card */
 }
 
 .flip-card-inner {
@@ -178,7 +178,7 @@ video{
     align-items: center;
     color: white; /* White text color */
     backface-visibility: hidden; /* Prevents backface from showing on rotation */
-    padding: 10px; /* Padding for text */
+    padding: 10px;
     box-sizing: border-box;
 }
 
@@ -188,14 +188,14 @@ video{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 0; /* Removed extra padding */
 }
 
 .flip-card-front img {
     width: 100%; /* Ensure the image fits within card width */
-    height: auto; /* Maintain aspect ratio */
+    height: 100%; /* Make image fill the entire card */
+    object-fit: cover; /* Keeps aspect ratio while covering the card */
     border-radius: 5px; /* Slightly round corners */
-
 }
 
 /* Back side with a golden background and readable text */
@@ -206,7 +206,6 @@ video{
     line-height: 1.4; /* Better line spacing for readability */
     text-align: center;
     padding: 15px; /* Padding around text */
- 
 }
 
 /* Style for the name and title on the back */
@@ -214,7 +213,7 @@ video{
     font-size: 18px;
     margin: 5px 0;
     font-weight: bold;
-    color: $accentColor;
+    color: $accentColor; /* Make sure the text is visible */
 }
 
 .flip-card-back p {
@@ -223,6 +222,7 @@ video{
     font-weight: 300;
     color: white;
 }
+
 
 
 /* --------------------------- MAIN --------------------------- */
