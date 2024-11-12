@@ -28,6 +28,17 @@ header {
     column-gap: $gutter;
     align-items: center; //vertically
     padding: .5rem $gutter;
+
+    img{ grid-column: 1;}
+
+    p{
+        grid-column: 1 / -1;
+        color: $secondaryColor;
+        font-size: .9rem;
+        align-self: start;
+        padding-top: .5rem;
+    }
+    
     span {
         font-size: 1.6rem;
         font-weight: $lightWeight;
@@ -122,65 +133,65 @@ video{
     height: auto;
 }
 } // end hero
+
 .flip-card-container {
-    display: grid; /* Use grid to arrange cards */
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-    grid-template-rows: repeat(2, 1fr); /* Two rows */
-    gap: 20px; /* Space between the cards */
-    justify-items: center; /* Center cards horizontally and vertically */
-  }
-  
-  .flip-card {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for 1x4 layout */
+    gap: 20px;
+    justify-items: center; /* Center cards horizontally */
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.flip-card {
     background-color: transparent;
     width: 300px;
     height: 200px;
-    border: 1px solid #f1f1f1;
-    perspective: 1000px; /* Keep the 3D effect */
-  }
-  
-  .flip-card-inner {
+    perspective: 1000px;
+}
+
+/* Flip card styles */
+.flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-  }
-  
-  .flip-card:hover .flip-card-inner {
+}
+
+.flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
-  }
-  
-  .flip-card-front, .flip-card-back {
+}
+
+.flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-    color: white; /* Set font color to white */
-  }
-  
-  /* Style the front side with a modern light gradient background */
-  .flip-card-front {
-    background: linear-gradient(135deg, #4e73df, #1d3c6a);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  /* Style the back side with a contrasting golden color */
-  .flip-card-back {
-    background-color: $primaryColor; /* Golden color for contrast */
-    transform: rotateY(180deg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-    font-weight: normal;
     color: white;
-  }
+    backface-visibility: hidden;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.flip-card-front {
+    background: linear-gradient(135deg, #2b2b2b, #1a1a1a);
+}
+
+.flip-card-front img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.flip-card-back {
+    background-color: #d4af37;
+    transform: rotateY(180deg);
+}
+
 /* --------------------------- MAIN --------------------------- */
 main {
     h1 {

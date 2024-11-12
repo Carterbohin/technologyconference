@@ -2,5 +2,12 @@ header, nav, main {
     max-width: 960px;
     margin: auto;
 }
+@media (min-width: 768px) {
+    .flip-card-container {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for 2x2 layout */
+        max-width: 640px; /* Centers the layout within this width */
+        margin: 0 auto; /* Centers the entire grid */
+    }
+}
 
 /* NAVIGATION STUFF GOES HERE  */
